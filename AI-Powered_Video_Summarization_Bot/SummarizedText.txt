@@ -1,0 +1,7 @@
+{
+  "code": "InternalServerError",
+  "message": "Prediction Failed",
+  "stacktrace": null,
+  "trace_id": "208261ef-92e5-4caa-91e7-1261c691ba57",
+  "reason": "{\"message\": \"'input_ids'\", \"stacktrace\": \"  File \\\"/microservice/main.py\\\", line 13, in predict\\n    return json.dumps(' '.join(self.model.predict(text, level = level)))\\n  File \\\"/microservice/aiflib/model.py\\\", line 68, in predict\\n    dataset = self._tokenize(text)\\n  File \\\"/microservice/aiflib/model.py\\\", line 136, in _tokenize\\n    tokenized_text[\\\"input_ids\\\"], tokenized_text[\\\"attention_mask\\\"],\\nKeyError: 'input_ids'\"}"
+}

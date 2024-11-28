@@ -1,0 +1,127 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="VideoToText" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="590.4,801.6" sap2010:WorkflowViewState.IdRef="VideoToText_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="VideoToText" sap:VirtualizedContainerService.HintSize="788.0000000000001,642.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Windows PowerShell" sap:VirtualizedContainerService.HintSize="449.6,532" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="37b36748-214d-4169-967d-cdf39fe4760c" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,240.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Windows.UI.Composition....'" sap:VirtualizedContainerService.HintSize="382.4,180.8" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="cd Documents\UiPath\Hack-A-Bot-3-main\Hack-A-Bot-3-main [k(Enter)] python pythonScript.py [k(Enter)]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="13932df0-8f9c-4f5d-a936-3a2be414d65d" InformativeScreenshot="7e7d2bd40cd04ad22881101b9c86d8cc" Selector="&lt;wnd cls='Windows.UI.Composition.DesktopWindowContentBridge' title='DesktopWindowXamlSource' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1158" FilePath="Microsoft.WindowsTerminal_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARMSURBVFhH7djHSjRdEAbgvh3zmHPOaSuigjuvQEQU3RhAQREEUcQspp3uBBVFUATBnHNczx3UP2/x1aE8fztBXU7DyzjdfU49VnefFp3wFt7CW4Dt8PDQ44vXFwo2Y2NjP0pTU1Mo8friATAkHOJWPJhYgGDiBdAV4S9uxYOJCyBgwkAdN0CgONXV1YRUVVWZVFZWmlRUVHxJeXm5SVlZmUlpaalJSUmJSXFxsUlRUdGXFBYWcgoKCr4kPz/fxPkOZuN+A7NxArNxGpaXl8cxwL+C2bifwgzQDQYMCmEiAAQUCBcqzB8uNzeXw0C7Y5ios7OTtra2qKOjw0CBCAXmDxcIhuTk5JCjcegOigD3+flJHx8f9P7+Tu3t7TyRINxgyF/BBGeA+h7DyZubmwx7e3uj19dXenl5oba2Nj6G4r+F+cMJDMnOziZHcAi6gslWV1cN7Pn5mZ6enujx8ZFaW1t5EhTXKH8wGxcsTMJAufkBRAHcY7u7uwb28PBA9/f3dHd3Ry0tLTwhCgv0O1wwMH+4rKwscgQnNz4KYhA+d3Z2GAfY7e0t3dzc0PX1NTU3N/NkKCzQYGA2zh9M4shTqYEogkH4xJOscVdXV3R5eUkDAwM8GYoKVMNsXKiwzMxMjgECh+CmR0cwKQah0MbGhoFdXFzQ+fk5nZ2dUX9/Pxf8CUzjNEzjGCgwwclTCSQmxQAc29/fN7DT01M6OTnhpx2T4DyNsmGIG8zGaVhGRgbHAAWngegGLl1vby91d3fTwcEBw46Pj+no6Ij3YxIU0si/gBmgDZMAhs/h4WEaHx+noaEh6urq4su9vb3NPycnJ38B/gZm49LT0zkM1DDBYT/+hltaWqKZmRkaHR2lwcFB7mRNTQ0lJiZSamoqT6yBGhYszg2GpKWlkaNhslwIbmVlhYFzc3M0MTFBIyMjVFtbSwkJCYzDhCgGCHAopid3C8ZJUlJS+FwbpsczEDDBoVhfXx8tLy/T4uIizc/P0+zsLE1OTlJdXZ0rDsH3vb098/7Ga1K/iWSx10vW+vo6JSUlMcSGIajjaBweChTCpVxYWDC46elpqq+vZ5z81sDhssllxGT6/a1fkfIW0mupLFfx8fE8J8ZrmISBwCF4AlG4sbGRLyvuvampKdM5wcl9J93DdxyT97d+RcpbyIZhucKKEBsby13UKAnmdAQnC6x0o6GhgXp6er50Dt3VOHwi2IcnGq9GG4auySKv11EsVWtrawaI8RomcWT110BAcKIeqDung47jfFwaXK6YmBiKjo6mqKgoioyMNImIiPhfcK7H4+EVQaMQ1EUMUC+yUlRuWumc3HcCk+AYzsOEKAYoCiNxcXGuQedwHFcHYzDWxjHQh/JqnKxlQAhK8h0OwS8jlwcTo/s6QCAASWSf4DTs3zgvgB4gBSdAQQaCIeiw7rjcSwJ26wwA+rveLzhfPP/+xxXewlt4c98c5z9BxdTdSJ+I3AAAAABJRU5ErkJggg==" InformativeScreenshot="599b8fa94b956a5515a9aeaf63f8d2f4.png" IsExactTitleEnabled="True" Selector="&lt;wnd app='windowsterminal.exe' appid='Microsoft.WindowsTerminal_8wekyb3d8bbwe!App' title='Windows PowerShell' /&gt;" Title="C:\WINDOWS\system32\cmd.exe" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
